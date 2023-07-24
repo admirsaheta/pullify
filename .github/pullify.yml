@@ -1,0 +1,6 @@
+releaseTargetBranch: microservices-branch
+commentOnReleasablePR: true
+labelsToIgnore: ["pullify: don't release"]
+releaseName: "'Pullify has made a release {version}, yay!"
+releaseLabel: "pullify: will release {version} :shipit:"
+noReleaseLabel: "pullify: won\'t release, talk to the hand"
