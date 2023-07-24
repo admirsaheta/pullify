@@ -1,0 +1,52 @@
+{
+  "name": "pullify",
+  "version": "1.0.0",
+  "description": "An immersive pull request bot",
+  "repository": "git@github.com:admirsaheta/pullify.git",
+  "author": "admirsaheta",
+  "license": "MIT",
+   "keywords": [
+    "klarify",
+    "pullify",
+    "probot-",
+    "pr-release-bot",
+    "pr-release"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot": "^7.2.0",
+    "probot-commands": "^1.1.0",
+    "probot-metadata": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nock": "^10.0.0",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
